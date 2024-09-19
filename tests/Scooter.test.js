@@ -88,10 +88,10 @@ describe('scooter methods', () => {
     const mcqueen = new User("lightning", "I<3mater", 20);
     const kachow = new Scooter("Radiator Springs")
     kachow.rent(mcqueen);
-    kachow.dock("London");
+    kachow.dock("Shibuya");
 
     expect(kachow.user).toBe(null);
-    expect(kachow.station).toEqual("London")
+    expect(kachow.station).toEqual("Shibuya")
     
   })
 

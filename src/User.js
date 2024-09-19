@@ -12,7 +12,10 @@ class User {
       throw new Error('user already logged in');
     }
     if (this.password === password){
+
       this.loggedIn = true;
+      console.log('user has been logged in');
+      
     } else {
       throw new Error('incorrect password')
     }
